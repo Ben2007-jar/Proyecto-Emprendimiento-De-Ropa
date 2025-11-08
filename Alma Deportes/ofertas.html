@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Primera Página Web</title>
-    <!-- Enlace a la hoja de estilos CSS -->
+    <title>Ofertas - Alma Deportt</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -19,13 +18,66 @@
                     <li class="links"><a href="ayuda.html">Ayuda</a></li>
                 </strong>
                 <li class="iconos"><a href="index.html"><img src="imagenes/casa.png" alt="Logo" width="30" height="30"></a></li>
-                <li class="iconos"><a href="index.html"><img src="imagenes/usuario.png" alt="Logo" width="30" height="30"></a></li>
+                <li class="iconos"><a href="login.html"><img src="imagenes/usuario.png" alt="Logo" width="30" height="30"></a></li>
             </ul>
         </div>
     </header>
     
     <main>
-        <h1>HOLA ESTO ES OFERTAS</h1>
+        <h1>OFERTAS ESPECIALES 🔥</h1>
+        <br>
+        <div class="ofertas-banner">
+            <h2>¡SUPER DESCUENTOS!</h2>
+            <p>Hasta 30% OFF en productos seleccionados</p>
+        </div>
+
+        <div class="productos-container">
+            <div class="card oferta-card">
+                <div class="etiqueta-oferta">-25% OFF</div>
+                <img src="ropa/top.PNG" width="300" height="200" />
+                <div class="card-body">
+                    <h2 class="card-title">Top Deportivo Nike</h2>
+                    <p class="precio-anterior">$10.000</p>
+                    <p class="card-text"><strong>$7.500</strong></p> 
+                    <button onclick="agregarCarrito('Top Deportivo Nike (OFERTA)', 7500)"><strong>Agregar al carrito</strong></button>
+                </div>
+            </div>
+
+            <div class="card oferta-card">
+                <div class="etiqueta-oferta">-30% OFF</div>
+                <img src="ropa/maya.PNG" width="300" height="200" />
+                <div class="card-body">
+                    <h2 class="card-title">Calza Larga Adidas</h2>
+                    <p class="precio-anterior">$15.000</p>
+                    <p class="card-text"><strong>$10.500</strong></p> 
+                    <button onclick="agregarCarrito('Calza Larga Adidas (OFERTA)', 10500)"><strong>Agregar al carrito</strong></button>
+                </div>
+            </div>
+
+            <div class="card oferta-card">
+                <div class="etiqueta-oferta">-20% OFF</div>
+                <img src="ropa/short.PNG" width="300" height="200" />
+                <div class="card-body">
+                    <h2 class="card-title">Short Deportivo</h2>
+                    <p class="precio-anterior">$8.000</p>
+                    <p class="card-text"><strong>$6.400</strong></p> 
+                    <button onclick="agregarCarrito('Short Deportivo (OFERTA)', 6400)"><strong>Agregar al carrito</strong></button>
+                </div>
+            </div>
+
+            <div class="card oferta-card">
+                <div class="etiqueta-oferta">-15% OFF</div>
+                <img src="ropa/conjuntos.png" width="300" height="200" />
+                <div class="card-body">
+                    <h2 class="card-title">Conjunto Gym</h2>
+                    <p class="precio-anterior">$20.000</p>
+                    <p class="card-text"><strong>$17.000</strong></p> 
+                    <button onclick="agregarCarrito('Conjunto Gym (OFERTA)', 17000)"><strong>Agregar al carrito</strong></button>
+                </div>
+            </div>
+        </div>
     </main>
+
+    <script src="carrito.js"></script>
 </body>
 </html>

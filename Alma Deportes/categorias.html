@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Primera Página Web</title>
-    <!-- Enlace a la hoja de estilos CSS -->
+    <title>Categorias - Alma Deportt</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -19,22 +18,98 @@
                     <li class="links"><a href="ayuda.html">Ayuda</a></li>
                 </strong>
                 <li class="iconos"><a href="index.html"><img src="imagenes/casa.png" alt="Logo" width="30" height="30"></a></li>
-                <li class="iconos"><a href="index.html"><img src="imagenes/usuario.png" alt="Logo" width="30" height="30"></a></li>
+                <li class="iconos"><a href="login.html"><img src="imagenes/usuario.png" alt="Logo" width="30" height="30"></a></li>
             </ul>
         </div>
     </header>
     
     <main>
-        <h1>HOLA ESTO ES CATEGORIAS</h1>
+        <h1>NUESTRAS CATEGORIAS</h1>
         <br>
-         <div class="card">
-             <img src="imagenes/top.PNG" width="300" height="200" />
+        <div class="productos-container">
+            <div class="card">
+                <img src="ropa/remera.PNG" />
                 <div class="card-body">
-        <h2 class="card-title">marca</h2>
-        <p class="card-text"><strong>precio</strong></p> 
-      <button onClick={handleClick}><strong>Agregar al carrito</strong></button>
-      </div>
-    </div>
+                    <h2 class="card-title">Remeras</h2>
+                    <button onclick=""><a href="remera.html"><strong>Ver categoria</strong></a></button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="ropa/musculosa.PNG"/>
+                <div class="card-body">
+                    <h2 class="card-title">Musculosas</h2>
+                   <button onclick=""><a href="musculosas.html"><strong>Ver categoria</strong></a></button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="ropa/top.PNG"/>
+                <div class="card-body">
+                    <h2 class="card-title">Tops deportivos</h2>
+                    <button onclick=""><a href="tops.html"><strong>Ver categoria</strong></a></button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="ropa/short.png"/>
+                <div class="card-body">
+                    <h2 class="card-title">Shorts y polleras</h2>
+                    <button onclick=""><a href="shortPolleras.html"><strong>Ver categoria</strong></a></button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="ropa/camisetas.PNG" />
+                <div class="card-body">
+                    <h2 class="card-title">Camisetas</h2>
+                    <button onclick=""><a href="camisetas.html"><strong>Ver categoria</strong></a></button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="ropa/campera.png" />
+                <div class="card-body">
+                    <h2 class="card-title">Camperas</h2>
+                    <button onclick=""><a href="camperas.html"><strong>Ver categoria</strong></a></button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="ropa/conjuntos.png" />
+                <div class="card-body">
+                    <h2 class="card-title">Conjuntos</h2>
+                    <button onclick=""><a href="conjuntos.html"><strong>Ver categoria</strong></a></button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="ropa/catsuit.png" />
+                <div class="card-body">
+                    <h2 class="card-title">Catsuits</h2>
+                   <button onclick=""><a href="catsuits.html"><strong>Ver categoria</strong></a></button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="ropa/maya.png" />
+                <div class="card-body">
+                    <h2 class="card-title">Mayas</h2>
+                    <button onclick=""><a href="maya.html"><strong>Ver categoria</strong></a></button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="ropa/accesorios.png" />
+                <div class="card-body">
+                    <h2 class="card-title">Accesorios</h2>
+                    <button onclick=""><a href="accesorios.html"><strong>Ver categoria</strong></a></button>
+                </div>
+            </div>
+
+        </div>
     </main>
+
+    <script src="carrito.js"></script>
 </body>
 </html>

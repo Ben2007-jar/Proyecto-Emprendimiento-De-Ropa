@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alma Deporte - Inicio</title>
+    <title>Login - Alma Deportt</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -22,27 +22,35 @@
             </ul>
         </div>
     </header>
-    
+   
     <main>
-         <h1>BIENVENIDOS A ALMA DEPORTE</h1>
+        <form onsubmit="iniciarSesion(event)">
+            <h1 class="textLogin">Login</h1>
         <br>
-        <div class="inicio-contenido">
-            <p class="inicio-texto">Tu tienda de indumentaria deportiva femenina en Orán, Salta</p>
-            <div class="inicio-cards">
-                <div class="info-card">
-                    <h2>💪 Calidad</h2>
-                    <p>Las mejores marcas del mercado</p>
-                </div>
-                <div class="info-card">
-                    <h2>👚 Variedad</h2>
-                    <p>Amplio catálogo de productos</p>
-                </div>
-                <div class="info-card">
-                    <h2>📍 Ubicación</h2>
-                    <p>Lavalle 220, Orán</p>
-                </div>
-            </div>
+            <label class="usuario"><strong>Usuario</strong></label><br>
+            <input type="text" class="login" id="usuario" required>  
+            <br>
+            <label class="contraseña"><strong>Contraseña</strong></label><br>
+            <input type="password" class="login" id="contraseña" required>
+            <br>
+            <input type="submit" class="enviar" value="Ingresar">
+        </form>
+        <div class="registro-link">
+            <p>¿No tenés cuenta? <a href="#">Registrate aquí</a></p>
         </div>
     </main>
+
+    <script>
+        function iniciarSesion(e) {
+            e.preventDefault();
+            const usuario = document.getElementById('usuario').value;
+            const contraseña = document.getElementById('contraseña').value;
+            
+            if (usuario && contraseña) {
+                alert('¡Bienvenida ' + usuario + '! Iniciando sesión...');
+                window.location.href = 'index.html';
+            }
+        }
+    </script>
 </body>
 </html>
