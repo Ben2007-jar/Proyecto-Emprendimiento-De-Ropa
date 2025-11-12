@@ -44,9 +44,6 @@ const Login = () => {
         <br />
         <input type="submit" className="enviar" value="Ingresar" />
       </form>
-      <div className="registro-link">
-        <p>¿No tenés cuenta? <a href="#">Registrate aquí</a></p>
-      </div>
     </main>
   );
 };
